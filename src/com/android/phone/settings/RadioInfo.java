@@ -141,7 +141,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AlertDialog.Builder;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.internal.telephony.Phone;
 import com.android.internal.telephony.PhoneFactory;
@@ -149,6 +148,7 @@ import com.android.internal.telephony.euicc.EuiccConnector;
 import com.android.internal.telephony.util.TelephonyUtils;
 import com.android.phone.R;
 import com.android.phone.utils.Utils;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -174,7 +174,7 @@ import com.qti.extphone.ServiceCallback;
  * Allows user to read and alter some of the radio related information.
  *
  */
-public class RadioInfo extends AppCompatActivity {
+public class RadioInfo extends CollapsingToolbarBaseActivity {
     private static final String TAG = "RadioInfo";
 
     private static final boolean IS_USER_BUILD = "user".equals(Build.TYPE);
